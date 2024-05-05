@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonic Store Online</title>
+    <link rel="stylesheet" href="../CSS/structure.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="p-header">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="../HTML/home.html"><img src="../IMG/sonic-icon.png" width="75px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="../HTML/about.html">About us</a></li>
+                        <li><a href="../HTML/login.html">Acount test</a></li>
+                        <li><a href="../HTML/shopAdmin.html">Store</a></li>
+                        <li><a href="../HTML/crudUser.html">Users</a></li>
+                        <li><a href="../HTML/crudProducts.html">Products</a></li>
+                        <li><a href="#" id="toggleCalculator">Calculator</a></li>
+                        <li>Welcome Admin!</li>
+                    </ul>
+                </nav>
+                <div class="shopping" onclick="toggleCart()">
+                    <img src="../IMG/bag-icon.png" width="20px" alt="">
+                    <span class="quantity">0</span>
+                </div>
+                <div class="menuInteractuable">
+                    <img src="../IMG/three-horizontal-lines-icon.png" class="menu-icon">
+                </div>
+            </div>
+        </div>
+
+        <section class="crud">
+            <div class="crud_products_container">
+                <h1>Product Management</h1>
+                <form id="productForm" class="crud__form__products">
+                    <input type="text" id="productName" name="productName" placeholder="productName" class="form__input">
+                    <input type="number" id="productPrice" name="productPrice" placeholder="productPrice" class="form__input">
+                    <input type="url" id="productUrl" name="productUrl" oninput="previewImage()" placeholder="URL" class="form__input">
+                    <br><img src="" alt="Product Image" id="imagePreview" style="max-width: 200px;"></br> <!-- style="max-width: 200px;" -->
+                    <button onclick="addProduct()" type="submit" id="submitButton" class="button button--primary">Add</button>
+                </form>
+                <table class="crud__table">
+                    <thead>
+                        <tr>
+                            <th class="table__header">ID</th>
+                            <th class="table__header">Product Name</th>
+                            <th class="table__header">Price</th>
+                            <th class="table__header">Image</th>
+                            <th class="table__header">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productsTable" class="table__body">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <h3>copyright 2024 - No Official Shop</h3>
+            <p> Shop.SEGA.com is owned by SEGA of America, Inc. and operated by Araca Merchandise L.P.
+                Araca Merchandise L.P. is solely responsible for the site's content and all aspects of your
+                purchase. © 2024 All Rights Reserved.
+
+                ©SEGA. All rights reserved. SEGA is registered in the U.S. Patent and Trademark Office.
+                SEGA, the SEGA logo and The SEGA Shop are either registered trademarks or trademarks of SEGA
+                Holding Co., Ltd. or its affiliates.</p>
+        </div>
+    </div>
+
+    <script src="../JS/scriptCrudProducts.js"></script>
+</body>
+</html>

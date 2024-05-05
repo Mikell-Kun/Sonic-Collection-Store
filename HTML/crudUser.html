@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonic Store Online</title>
+    <link rel="stylesheet" href="../CSS/structure.css">
+</head>
+<body>
+    <div class="container">
+        <div class="p-header">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="../HTML/home.html"><img src="../IMG/sonic-icon.png" width="75px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="../HTML/about.html">About us</a></li>
+                        <li><a href="../HTML/login.html">Account test</a></li>
+                        <li><a href="../HTML/shopAdmin.html">Store</a></li>
+                        <li><a href="../HTML/crudUser.html">Users</a></li>
+                        <li><a href="../HTML/crudProducts.html">Products</a></li>
+                        <li><a href="#" id="toggleCalculator">Calculator</a></li>
+                        <li>Welcome Admin!</li>
+                    </ul>
+                </nav>
+                <div class="shopping" onclick="toggleCart()">
+                    <img src="../IMG/bag-icon.png" width="20px" alt="">
+                    <span class="quantity">0</span>
+                </div>
+                <div class="menuInteractuable">
+                    <img src="../IMG/three-horizontal-lines-icon.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+            </div>
+        </div>
+        
+        <section class="crud">
+            <div class="crud_user_container">
+                <h1>User's Registration</h1>
+                <form id="userForm" class="crud__form__user">
+                    <input type="text" id="username" placeholder="Username" class="form__input">
+                    <input type="password" id="password" placeholder="Password" class="form__input">
+                    <input type="text" id="role" placeholder="Role" class="form__input">
+                    <button class="button button--primary" type="button" onclick="addUser()">Add</button>
+                </form>
+
+                <table class="crud__table" id="userTable">
+                    <thead>
+                        <tr>
+                            <th class="table__header">ID</th>
+                            <th class="table__header">Username</th>
+                            <th class="table__header">Password</th>
+                            <th class="table__header">Role</th>
+                            <th class="table__header">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__body">
+    
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="footer-second">
+        <div class="container">
+            <h3>copyright 2024 - No Official Shop</h3>
+            <p> Shop.SEGA.com is owned by SEGA of America, Inc. and operated by Araca Merchandise L.P.
+                Araca Merchandise L.P. is solely responsible for the site's content and all aspects of your
+                purchase. © 2024 All Rights Reserved.
+
+                ©SEGA. All rights reserved. SEGA is registered in the U.S. Patent and Trademark Office.
+                SEGA, the SEGA logo and The SEGA Shop are either registered trademarks or trademarks of SEGA
+                Holding Co., Ltd. or its affiliates.</p>
+        </div>
+    </div>
+
+    <script src="../JS/scriptCrudUser.js"></script>
+</body>
+</html>

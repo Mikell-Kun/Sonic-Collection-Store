@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonic Store Online</title>
+    <link rel="stylesheet" href="../CSS/structure.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="p-header">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="../HTML/home.html"><img src="../IMG/sonic-icon.png" width="75px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="../HTML/about.html">About us</a></li>
+                        <li><a href="#" id="toggleCalculator">Calculator</a></li>
+                        <li>Wellcome Client!</li>
+                    </ul>
+                </nav>
+                <div class="shopping" onclick="toggleCart()">
+                    <img src="../IMG/bag-icon.png" width="20px" alt="">
+                    <span class="quantity">0</span>
+                </div>
+                <div class="menuInteractuable">
+                    <img src="../IMG/three-horizontal-lines-icon.png" class="menu-icon">
+                </div>
+            </div>
+        </div>
+
+        <!-- Calculadora -->
+        <div id="icalculator" style="display: none;">
+            <iframe src="../HTML/calculator.html" frameborder="0" width="100%" height="500px"></iframe>
+        </div>
+
+        <div class="Sonic__Collection">
+            <h1>SONIC COLLECTION STORE</h1>
+            <div id="productListForCart" class="list__products">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card" id="shoppingCart">
+        <h1>Cart</h1>
+        <ul class="listCard" id="cartList"></ul>
+        <div class="checkOut">
+            <div class="total" id="totalPrice">0</div>
+            <div class="acceptPurchase" onclick="generateTicket()">Purchase</div>
+            <div class="closeShopping" onclick="toggleCart()">Close</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <h3>copyright 2024 - No Official Shop</h3>
+            <p> Shop.SEGA.com is owned by SEGA of America, Inc. and operated by Araca Merchandise L.P.
+                Araca Merchandise L.P. is solely responsible for the site's content and all aspects of your
+                purchase. © 2024 All Rights Reserved.
+
+                ©SEGA. All rights reserved. SEGA is registered in the U.S. Patent and Trademark Office.
+                SEGA, the SEGA logo and The SEGA Shop are either registered trademarks or trademarks of SEGA
+                Holding Co., Ltd. or its affiliates.</p>
+        </div>
+    </div>
+    <script src="../JS/scriptShowCalculator.js"></script>
+    <script src="../JS/scriptListProducts.js"></script>
+</body>
+
+</html>
