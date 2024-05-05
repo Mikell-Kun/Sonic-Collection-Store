@@ -5,4 +5,4 @@
 - proyecto que continua en relacion a la tienda online previa
 
 
-![home](C:/Users/migue/OneDrive/Escritorio/home.jpg)
+![home](ImagePreview/home.png)
