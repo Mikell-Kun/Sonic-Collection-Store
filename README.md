@@ -5,4 +5,42 @@
 - proyecto que continua en relacion a la tienda online previa
 
 
+## HOME
+
 ![home](ImagePreview/home.png)
+
+## ABOUT US
+
+![about](ImagePreview/aboutUs.png)
+
+## LOG IN
+
+![login](ImagePreview/account.png)
+
+## IF IS ADMIN
+
+![shopAdmin](ImagePreview/shopAdmin.png)
+
+## IF IS CLIENT
+
+![shopUser](ImagePreview/shopUser.png)
+
+## BOTH CAN USE CALCULATOR
+
+![calculator](ImagePreview/calculator.png)
+
+## BOTH CAN SHOP
+
+![cart](ImagePreview/cart.png)
+
+## BOTH RECIVE TICKET
+
+![ticket](ImagePreview/ticket.png)
+
+## CRUD USERS
+
+![crudUser](ImagePreview/crudUser.png)
+
+## CRUD PRODUCTS
+
+![crudProduct](ImagePreview/crudProducts.png)
