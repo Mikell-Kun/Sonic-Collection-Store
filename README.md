@@ -4,4 +4,5 @@
 - Gabriel Miguel Cabrera Samano No.Control 20491199
 - proyecto que continua en relacion a la tienda online previa
 
-![home](Desktop/home.png)  
+![home](home.png)
+<img src="home.png" alt="home" />
