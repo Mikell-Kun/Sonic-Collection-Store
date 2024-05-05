@@ -4,4 +4,5 @@
 - Gabriel Miguel Cabrera Samano No.Control 20491199
 - proyecto que continua en relacion a la tienda online previa
 
-<img src="C:\Users\migue\OneDrive\Escritorio" alt="home" />
+
+![home](C:/Users/migue/OneDrive/Escritorio/home.jpg)
